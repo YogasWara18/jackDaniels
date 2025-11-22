@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <section id="hero" className="noisy">
-        <h1 className="title">JackDaniels</h1>
+        <h1 className="title">JackDaniel's</h1>
 
         <img 
         src="/images/hero-left-leaf.png" 
