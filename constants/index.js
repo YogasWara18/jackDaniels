@@ -1,7 +1,7 @@
 const navLinks = [
  {
-	id: "cocktails",
-	title: "Cocktails",
+	id: "Whisky",
+	title: "Whisky",
  },
  {
 	id: "about",

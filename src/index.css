@@ -92,7 +92,7 @@ body {
         @apply relative z-10 min-h-dvh w-full border border-transparent;
 
         h1 {
-            @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
+            @apply md:mt-32 mt-40 text-8xl md:text-[15vw] leading-none text-center font-modern-negra;
         }
 
         .left-leaf {
@@ -100,7 +100,7 @@ body {
         }
 
         .right-leaf {
-            @apply absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-1/2 md:w-fit w-24;
+            @apply absolute right-0 md:bottom-0 xl:top-75 2xl:top-12 top-1/2 md:w-fit w-24;
         }
 
         .body {

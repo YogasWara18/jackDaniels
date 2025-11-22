@@ -16,7 +16,7 @@ const Navbar = () => {
             backgroundColor: '#00000050',
             backgorundFilter: 'blur(10px)',
             duration: 1,
-            ease: 'power.inOut' 
+            ease: 'power1.inOut' 
         });
     })
 
