@@ -1,76 +1,114 @@
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
+import { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
-    useGSAP(() => {
-        const heroSplit = new SplitText('.title', { type: 'chars, words'});
-        const paragraphSplit = new SplitText('.subtitle', { type: 'lines'});
+  const videoRef = useRef();
 
-        heroSplit.chars.forEach((char) => char.classList.add('text-gradient'));
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
-        gsap.from(heroSplit.chars, {
-            yPercent: 100,
-            duration: 1.8,
-            ease: 'expo.out',
-            stagger: 0.05
-        });
+  useGSAP(() => {
+    const heroSplit = new SplitText(".title", { type: "chars, words" });
+    const paragraphSplit = new SplitText(".subtitle", { type: "lines" });
 
-        gsap.from(paragraphSplit.lines, {
-            opacity: 0,
-            yPercent: 100,
-            duration: 1.8,
-            ease: 'expo.out',
-            stragger: 0.06,
-            delay: 1, 
-        });
+    heroSplit.chars.forEach((char) => char.classList.add("text-gradient"));
 
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: '#hero',
-                start: 'top top',
-                end: 'bottom top',
-                scrub: true,
-            }
-        })
-        .to('.right-leaf', { y: 200 }, 0)
-        .to('.left-leaf', {y: -200 }, 0)
-    }, []);
+    gsap.from(heroSplit.chars, {
+      yPercent: 100,
+      duration: 1.8,
+      ease: "expo.out",
+      stagger: 0.05,
+    });
+
+    gsap.from(paragraphSplit.lines, {
+      opacity: 0,
+      yPercent: 100,
+      duration: 1.8,
+      ease: "expo.out",
+      stagger: 0.06,
+      delay: 1,
+    });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      })
+      .to(".right-leaf", { y: 200 }, 0)
+      .to(".left-leaf", { y: -200 }, 0);
+
+ const startValue = isMobile ? "top 50%" : "center 60%";
+	const endValue = isMobile ? "120% top" : "bottom top";
+	
+	let tl = gsap.timeline({
+	 scrollTrigger: {
+		trigger: "video",
+		start: startValue,
+		end: endValue,
+		scrub: true,
+		pin: true,
+	 },
+	});
+	
+	videoRef.current.onloadedmetadata = () => {
+	 tl.to(videoRef.current, {
+		currentTime: videoRef.current.duration,
+	 });
+	};
+
+  }, []);
 
   return (
-    <section id="hero" className="noisy">
-      <h1 className="title">JackDaniel's</h1>
+    <>
+      <section id="hero" className="noisy">
+        <h1 className="title">JackDaniel's</h1>
 
-      <img
-        src="/images/hero-left-leaf.png"
-        alt="left-leaf"
-        className="left-leaf w-45"
-      />
+        <img
+          src="/images/hero-left-leaf.png"
+          alt="left-leaf"
+          className="left-leaf w-45"
+        />
 
-      <img
-        src="/images/hero-right-leaf.png"
-        alt="right-leaf"
-        className="right-leaf w-90"
-      />
+        <img
+          src="/images/hero-right-leaf.png"
+          alt="right-leaf"
+          className="right-leaf w-90"
+        />
 
-      <div className="body">
-        <div className="content">
-          <div className="space-y-2 hidden md:block">
-            <p className="pl-16">Characterful. Warm. Elegant.</p>
-            <p className="subtitle">
-              Sip the Spirit <br /> of Summer
-            </p>
-          </div>
+        <div className="body">
+          <div className="content">
+            <div className="space-y-2 hidden md:block">
+              <p className="pl-16">Characterful. Warm. Elegant.</p>
+              <p className="subtitle">
+                Sip the Spirit <br /> of Summer
+              </p>
+            </div>
 
-          <div className="space-y-3 view-cocktails">
-            <p className="subtitle">
-              Whisky is an elegant, warm, characterful spirit with smoky aroma, complex flavors, and a smooth, captivating finish.
-            </p>
-            <a href="#whisky">View Whisky</a>
+            <div className="space-y-3 view-cocktails">
+              <p className="subtitle">
+                Whisky is an elegant, warm, characterful spirit with smoky
+                aroma, complex flavors, and a smooth, captivating finish.
+              </p>
+              <a href="#whisky">View Whisky</a>
+            </div>
           </div>
         </div>
+      </section>
+
+      <div className="video absolute inset-0">
+        <video ref={videoRef} src="/public/videos/input.mp4"
+         muted playsInline preload="auto"
+        >
+         
+        </video>
       </div>
-    </section>
+    </>
   );
 };
 
