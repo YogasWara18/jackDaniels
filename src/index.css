@@ -100,7 +100,7 @@ body {
         }
 
         .right-leaf {
-            @apply absolute -right-20 md:bottom-0 xl:top-55 2xl:top-12 top-1/2 md:w-fit w-24;
+            @apply absolute -right-1 md:bottom-0 xl:top-45 2xl:top-12 top-1/2 md:w-fit w-24;
         }
 
         .body {
