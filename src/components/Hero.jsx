@@ -93,7 +93,7 @@ const Hero = () => {
             <div className="space-y-3 view-cocktails">
               <p className="subtitle">
                 Whisky is an elegant, warm, characterful spirit with smoky
-                aroma, complex flavors, and a smooth, captivating finish!.
+                aroma, complex flavors, and a smooth, captivating finish.
               </p>
               <a href="#whisky">View Whisky</a>
             </div>
