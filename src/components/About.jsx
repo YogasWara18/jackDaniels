@@ -68,6 +68,24 @@ const About = () => {
       title: "Jack Daniel’s 1907 Brand Tennessee Sour Mash Whiskey",
       desc: "This whiskey is designed as a lighter alternative to the classic variant, while maintaining the quality and signature process of Jack Daniel's.",
     },
+    {
+      src: "/images/abt11.png",
+      alt: "grid-img-11",
+      title: "Jack Daniel’s 12-Year-Old Tennessee Whiskey",
+      desc: "Jack Daniel’s Aged Series — an exclusive line featuring age-stated whiskeys, highlighting the depth of flavor from the long maturation process.",
+    },
+    {
+      src: "/images/abt12.png",
+      alt: "grid-img-12",
+      title: "Jack Daniel’s White Rabbit Saloon Special Edition",
+      desc: "Released to commemorate Jack Daniel's legendary saloon in Lynchburg, this product has a 43% alcohol content and is packaged in 700ml bottles.",
+    },
+    {
+      src: "/images/abt13.png",
+      alt: "grid-img-13",
+      title: "Jack Daniel’s Sinatra Select Tennessee Whiskey",
+      desc: "Frank Sinatra was known to be a huge fan of Jack Daniel’s, even calling it the “nectar of the gods.” To honor that legacy, Jack Daniel’s released Sinatra Select with a bolder and smoother flavor, befitting Sinatra’s elegant style.",
+    }
   ];
 
   return (
