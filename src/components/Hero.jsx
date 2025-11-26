@@ -72,7 +72,7 @@ const Hero = () => {
         <img
           src="/images/hero-left-leaf.png"
           alt="left-leaf"
-          className="left-leaf w-45"
+          className="left-leaf w-46"
         />
 
         <img
