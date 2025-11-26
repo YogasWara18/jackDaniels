@@ -4,11 +4,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
-
-
+import "../index.css";
 
 const About = () => {
-
   const slides = [
     {
       src: "/images/abt1.png",
@@ -23,10 +21,10 @@ const About = () => {
       desc: "A blend of classic whiskey and natural honey, resulting in a soft sweetness that is perfect for light cocktails.",
     },
     {
-      src: "/images/abt5.png",
+      src: "/images/abt9.png",
       alt: "grid-img-5",
-      title: "Gentleman Jack",
-      desc: "Premium whiskey that is double-filtered through maple charcoal, resulting in a smoother and more elegant taste.",
+      title: "Jack Daniel’s Tennessee Apple",
+      desc: "A blend of whiskey with fresh, sweet, and slightly sour apple flavors, popular for mixed drinks.",
     },
     {
       src: "/images/abt3.png",
@@ -59,20 +57,18 @@ const About = () => {
       desc: "It is a special edition created to celebrate the 150th anniversary of Jack Daniel’s Distillery.",
     },
     {
-      src: "/images/abt9.png",
+      src: "/images/abt5.png",
       alt: "grid-img-9",
-      title: "Jack Daniel’s Tennessee Apple",
-      desc: "A blend of whiskey with fresh, sweet, and slightly sour apple flavors, popular for mixed drinks.",
+      title: "Gentleman Jack",
+      desc: "Premium whiskey that is double-filtered through maple charcoal, resulting in a smoother and more elegant taste.",
     },
     {
       src: "/images/abt10.png",
       alt: "grid-img-10",
       title: "Jack Daniel’s 1907 Brand Tennessee Sour Mash Whiskey",
       desc: "This whiskey is designed as a lighter alternative to the classic variant, while maintaining the quality and signature process of Jack Daniel's.",
-    }
+    },
   ];
-
-  
 
   return (
     <div id="about">
@@ -103,49 +99,49 @@ const About = () => {
           </div>
         </div>
       </div>
-      
+
       <div id="about" className="py-20 container mx-auto">
-      <Swiper
-        modules={[Navigation, Pagination, EffectCoverflow]}
-        effect="coverflow"
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView="auto"
-        coverflowEffect={{
-          rotate: 20,
-          stretch: 0,
-          depth: 200,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        navigation
-        pagination={{ clickable: true }}
-        loop={true}
-        className="w-full max-w-5xl"
-      >
-        {slides.map((item, index) => (
-          <SwiperSlide
-            key={index}
-            className="bg-transparent rounded-xl overflow-hidden p-5 flex flex-col items-center justify-center text-center"
-            style={{ width: "400px" }}
-          >
-            <img
-              src={item.src}
-              alt={item.alt}
-              className="w-full max-h-100 object-contain rounded-md"
-            />
-            <h3 className="mt-4 text-lg font-bold text-white">{item.title}</h3>
-            <p className="text-sm text-gray-300">{item.desc}</p>
-            <button className="mt-3 px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700">
-              More Info
-            </button>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        <Swiper 
+          modules={[Navigation, Pagination, EffectCoverflow]}
+          effect="coverflow"
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView="auto"
+          coverflowEffect={{
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          navigation 
+          pagination={{ clickable: true }}
+          loop={true}
+          className="w-full max-w-8xl"
+        >
+          {slides.map((item, index) => (
+            <SwiperSlide
+              key={index}
+              className="bg-transparent rounded-xl overflow-hidden p-5 flex flex-col items-center justify-center text-center"
+              style={{ width: "450px" }}
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-full max-h-110 object-contain rounded-md"
+              />
+              <h3 className="mt-4 text-lg font-bold text-white">
+                {item.title}
+              </h3>
+              <p className="text-sm text-gray-300">{item.desc}</p>
+              <button className="badge">
+                More Info
+              </button>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
-
-        </div>
-
   );
 };
 
