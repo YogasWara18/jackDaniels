@@ -31,8 +31,8 @@ const About = () => {
     {
       src: "/images/abt3.png",
       alt: "grid-img-3",
-      title: "Vintage Collection",
-      desc: "Perfect for celebrations",
+      title: "Jack Daniel’s Tennessee Fire",
+      desc: "Whiskey with added spicy cinnamon, providing a warm and bold sensation.",
     },
     {
       src: "/images/abt4.png",
@@ -43,32 +43,32 @@ const About = () => {
     {
       src: "/images/abt6.png",
       alt: "grid-img-6",
-      title: "Heritage Scotch",
-      desc: "Crafted to perfection",
+      title: "Jack Daniel’s Rye Whiskey",
+      desc: "Made with 70% rye, it delivers a spicy, spicy flavor that's distinct from classic whiskey.",
     },
     {
       src: "/images/abt7.png",
       alt: "grid-img-7",
-      title: "Oak Barrel",
-      desc: "Aged for excellence",
+      title: "Jack Daniel’s Eric Church Special Edition",
+      desc: "A limited release from the Single Barrel Select series created specifically to honor country musician Eric Church. This whiskey is hand-selected from barrels in the Jack Daniel's barrelhouse.",
     },
     {
       src: "/images/abt8.png",
       alt: "grid-img-8",
-      title: "Smoky Delight",
-      desc: "Bold and captivating",
+      title: "Jack Daniel’s 150th Anniversary Tennessee Whiskey",
+      desc: "It is a special edition created to celebrate the 150th anniversary of Jack Daniel’s Distillery.",
     },
     {
       src: "/images/abt9.png",
       alt: "grid-img-9",
-      title: "Cask Strength",
-      desc: "Unfiltered and intense",
+      title: "Jack Daniel’s Tennessee Apple",
+      desc: "A blend of whiskey with fresh, sweet, and slightly sour apple flavors, popular for mixed drinks.",
     },
     {
       src: "/images/abt10.png",
       alt: "grid-img-10",
-      title: "Limited Edition",
-      desc: "Exclusive whisky experience",
+      title: "Jack Daniel’s 1907 Brand Tennessee Sour Mash Whiskey",
+      desc: "This whiskey is designed as a lighter alternative to the classic variant, while maintaining the quality and signature process of Jack Daniel's.",
     }
   ];
 
@@ -132,7 +132,7 @@ const About = () => {
             <img
               src={item.src}
               alt={item.alt}
-              className="w-full max-h-94 object-contain rounded-md"
+              className="w-full max-h-100 object-contain rounded-md"
             />
             <h3 className="mt-4 text-lg font-bold text-white">{item.title}</h3>
             <p className="text-sm text-gray-300">{item.desc}</p>
