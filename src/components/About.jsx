@@ -151,7 +151,7 @@ const About = () => {
               <h3 className="mt-4 text-lg font-bold text-white">
                 {item.title}
               </h3>
-              <p className="text-sm text-gray-300">{item.desc}</p>
+              <p className="text-sm text-gray-300 p-1.5">{item.desc}</p>
               <button className="badge">
                 More Info
               </button>
