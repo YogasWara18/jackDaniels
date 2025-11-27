@@ -137,35 +137,31 @@ const socials = [
 const allCocktails = [
  {
 	id: 1,
-	name: "Classic Mojito",
+	name: "Minted Mellow",
 	image: "/images/drink1.png",
-	title: "Simple Ingredients, Bold Flavor",
-	description:
-	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+	title: "Gentleman Jack Citrus Mint Whiskey Cocktail",
+	description: "Refined and refreshing, Minted Mellow celebrates the smooth elegance of Gentleman Jack—double mellowed for exceptional balance.",
  },
  {
 	id: 2,
-	name: "Raspberry Mojito",
+	name: "Apple Barrel Chill",
 	image: "/images/drink2.png",
-	title: "A Zesty Classic That Never Fails",
-	description:
-	 "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+	title: "Jack Daniel’s Tennessee Apple Whiskey Cocktail",
+	description: "Crisp, juicy, and irresistibly smooth, Apple Barrel Chill brings together the bold character of Jack Daniel’s Tennessee Whiskey and the refreshing sweetness of green apple liqueur.",
  },
  {
 	id: 3,
-	name: "Violet Breeze",
+	name: "Golden Hive Elixir",
 	image: "/images/drink3.png",
-	title: "Simple Ingredients, Bold Flavor",
-	description:
-	 "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+	title: "Jack Daniel’s Tennessee Honey Winter Cocktail",
+	description: "Smooth, sweet, and seasonally inspired, Golden Hive Elixir blends the mellow warmth of Jack Daniel’s Tennessee Honey with citrus notes and a touch of spice.",
  },
  {
 	id: 4,
-	name: "Curacao Mojito",
+	name: "Smoky Thyme Reverie",
 	image: "/images/drink4.png",
-	title: "Crafted With Care, Poured With Love",
-	description:
-	 "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+	title: "Jack Daniel’s Old No. 7 Layered Whiskey Cocktails",
+	description: "A sophisticated blend of depth and aroma, Smoky Thyme Reverie showcases the bold character of Jack Daniel’s Old No. 7 Tennessee Whiskey in a visually striking layered cocktail. The dark base reveals the whiskey’s rich sour mash heritage.",
  },
 ];
 
