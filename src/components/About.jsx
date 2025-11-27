@@ -85,6 +85,18 @@ const About = () => {
       alt: "grid-img-13",
       title: "Jack Daniel’s Sinatra Select Tennessee Whiskey",
       desc: "Frank Sinatra was known to be a huge fan of Jack Daniel’s, even calling it the “nectar of the gods.” To honor that legacy, Jack Daniel’s released Sinatra Select with a bolder and smoother flavor, befitting Sinatra’s elegant style.",
+    },
+    {
+      src: "/images/abt14.png",
+      alt: "grid-img-14",
+      title: "Jack Daniel's Bonded Tennessee Whiskey",
+      desc: "Bold, refined, and steeped in heritage — Jack Daniel’s Bonded is a Bottled-in-Bond Tennessee Whiskey crafted for depth and character.",
+    },
+    {
+      src: "/images/abt15.png",
+      alt: "grid-img-15",
+      title: "Jack Daniel’s No. 27 Gold Tennessee Whiskey",
+      desc: "Jack Daniel’s No. 27 Gold is a refined Tennessee Whiskey crafted to elevate the signature character of Old No. 7. ",
     }
   ];
 
